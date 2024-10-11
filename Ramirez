@@ -1,0 +1,16 @@
+// doWhileExample.js
+
+let number;
+let isValid = false;
+
+do {
+    number = prompt("Please enter a number between 1 and 10:");
+    number = Number(number);
+    
+    if (number >= 1 && number <= 10) {
+        isValid = true;
+        console.log("You entered a valid number: " + number);
+    } else {
+        console.log("Invalid input. Please try again.");
+    }
+} while (!isValid);
